@@ -40,7 +40,7 @@ Deployed to a Cloud it's a SaaS (Software as a Service) solution.
 DEMO
 ----
 
-A demo version of the latest master version can be found on our [Demo server](https://demo.opensourcepos.org). This is a containerized install which will be reinitialized when new functionality is added to the code repository.
+A demo version of the latest master version can be found on our [Demo server](https://sickness.dk/pos/demo/). This is a containerized install which will be reinitialized when new functionality is added to the code repository.
 
 LOGIN using
 * username: admin
@@ -96,9 +96,9 @@ If you like the project, and you are making money out of it in some form, then c
 Language Translations
 ---------------------
 
-To help us with OSPOS translations please use [Weblate website here](http://translate.opensourcepos.org) and sign up. After registering you can subscribe to different languages and you will be notified once a new translation is added.
+To help us with OSPOS translations please use [Weblate website here](http://translate.sickness.dk) and sign up. After registering you can subscribe to different languages and you will be notified once a new translation is added.
 
-Please also read the [wiki page here](https://github.com/opensourcepos/opensourcepos/wiki/Adding-translations) to find our Translations Guideline.
+Please also read the [wiki page here](https://github.com/peterkruse/POS_System/wiki/Adding-translations) to find our Translations Guideline.
 
 Only with the help of the community we can keep language translations up to date.
 
@@ -128,11 +128,10 @@ If missing information is not provided within a week we will close your issue.
 FAQ
 ---
 
-* If you are seeing the message **system folder missing**, then you have cloned the source using git and you need to run a build *first*. Check [INSTALL.md](https://github.com/opensourcepos/opensourcepos/blob/master/INSTALL.md) for instructions or download latest zip file from [bintray](https://bintray.com/jekkos/opensourcepos/opensourcepos/view/files?sort=updated&order=desc#files) instead.
 
-* If at login time you read "The installation is not correct, check your php.ini file.", please check the error_log in public folder to understand what's wrong and make sure you read the [INSTALL.md](https://github.com/opensourcepos/opensourcepos/blob/master/INSTALL.md). To know how to enable error_log, please read the comment in [issue 1770](https://github.com/opensourcepos/opensourcepos/issues/1770#issuecomment-355177943).
+* If at login time you read "The installation is not correct, check your php.ini file.", please check the error_log in public folder to understand what's wrong and make sure you read the [INSTALL.md](https://github.com/peterkruse/POS_System/blob/master/INSTALL.md). To know how to enable error_log, please read the comment in [issue 1770](https://github.com/peterkruse/POS_System/issues/1770#issuecomment-355177943).
 
-* If you installed your OSPOS under a web server subdir, please edit public/.htaccess and go to the lines with comment `if in web root` and `if in subdir comment above line, uncomment below one and replace <OSPOS path> with your path` and follow the instruction on the second comment line. If you face more issues please read [issue #920](https://github.com/opensourcepos/opensourcepos/issues/920) for more help.
+* If you installed your OSPOS under a web server subdir, please edit public/.htaccess and go to the lines with comment `if in web root` and `if in subdir comment above line, uncomment below one and replace <OSPOS path> with your path` and follow the instruction on the second comment line. If you face more issues please read [issue #920](https://github.com/peterkruse/POS_System/issues/920) for more help.
 
 * Apache server configurations are SysAdmin issues and not strictly related to OSPOS. Please make sure you first can show a "hello world" html page before pointing to OSPOS public directory. Make sure .htaccess is correctly configured.
 
@@ -140,7 +139,7 @@ FAQ
 
 * If you install ospos in docker behind a proxy that performs ssloffloading, you can enable the url generated to be https instead of http, by activating the environment variable FORCE_HTTPS = 1.
 
-* If you have suhosin installed and face an issue with CSRF, please make sure you read [issue #1492](https://github.com/opensourcepos/opensourcepos/issues/1492).
+* If you have suhosin installed and face an issue with CSRF, please make sure you read [issue #1492](https://github.com/peterkruse/POS_System/issues/1492).
 
 Credits
 -------
